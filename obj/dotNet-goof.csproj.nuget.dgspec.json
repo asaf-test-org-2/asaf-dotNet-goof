@@ -1,32 +1,32 @@
 {
   "format": 1,
   "restore": {
-    "/Users/pstember/Git/dotNet-goof/dotNet-goof.csproj": {}
+    "/Users/aagami/repos/asaf-dotNet-goof/dotNet-goof.csproj": {}
   },
   "projects": {
-    "/Users/pstember/Git/dotNet-goof/dotNet-goof.csproj": {
+    "/Users/aagami/repos/asaf-dotNet-goof/dotNet-goof.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/pstember/Git/dotNet-goof/dotNet-goof.csproj",
+        "projectUniqueName": "/Users/aagami/repos/asaf-dotNet-goof/dotNet-goof.csproj",
         "projectName": "dotNet-goof",
-        "projectPath": "/Users/pstember/Git/dotNet-goof/dotNet-goof.csproj",
-        "packagesPath": "/Users/pstember/.nuget/packages/",
-        "outputPath": "/Users/pstember/Git/dotNet-goof/obj/",
+        "projectPath": "/Users/aagami/repos/asaf-dotNet-goof/dotNet-goof.csproj",
+        "packagesPath": "/Users/aagami/.nuget/packages/",
+        "outputPath": "/Users/aagami/repos/asaf-dotNet-goof/obj/",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "/Users/pstember/.nuget/NuGet/NuGet.Config"
+          "/Users/aagami/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
-          "netcoreapp2.2"
+          "netcoreapp3.1"
         ],
         "sources": {
-          "https://api.nuget.org/v3/index.json": {}
+          "/Users/aagami/repos/code-analyzers-package/src/Legit.Common.Analyzer/Legit.Common.Analyzers.Package/bin/Debug": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://nuget.pkg.github.com/LegitSecurity/index.json": {}
         },
         "frameworks": {
-          "netcoreapp2.2": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
             "projectReferences": {}
           }
         },
@@ -34,27 +34,58 @@
           "warnAsError": [
             "NU1605"
           ]
-        }
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.200"
       },
       "frameworks": {
-        "netcoreapp2.2": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
           "dependencies": {
-            "Microsoft.NETCore.App": {
-              "suppressParent": "All",
-              "target": "Package",
-              "version": "[2.2.0, )",
-              "autoReferenced": true
-            },
             "System.Management.Automation": {
               "target": "Package",
               "version": "[6.1.0, )"
+            },
+            "log4net": {
+              "target": "Package",
+              "version": "[2.0.8, )"
             }
           },
           "imports": [
-            "net461"
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
-          "warn": true
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[3.1.10, 3.1.10]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Host.osx-x64",
+              "version": "[3.1.32, 3.1.32]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[3.1.0, 3.1.0]"
+            }
+          ],
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/9.0.200/RuntimeIdentifierGraph.json"
         }
       }
     }
